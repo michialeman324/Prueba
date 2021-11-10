@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+   "id": 1,
+   "nombre": "Julio",
+   "correo": "Julio@gmail.com"
+},
+{
+   "id": 3,
+   "nombre": "antonio",
+   "correo": "antonio@gmail.com"
+},{
+   "id": 4,
+   "nombre": "Jose",
+   "correo": "Jose@gmail.com"
+},{
+   "id": 5,
+   "nombre": "Gregorio",
+   "correo": "Gregorio@gmail.com"
+},{
+   "id": 6,
+   "nombre": "Julio",
+   "correo": "Julio@gmail.com"
+},{
+   "id": 7,
+   "nombre": "Elnubes",
+   "correo": "Elnubes@gmail.com"
+},{
+   "id": 8,
+   "nombre": "Macrico",
+   "correo": "Macrico@gmail.com"
+},{
+   "id": 9,
+   "nombre": "Cocaina",
+   "correo": "Cocaina@gmail.com"
+},{
+   "id": 10,
+   "nombre": "Putencion",
+   "correo": "Putencion@gmail.com"
+},
+  ]
+}
