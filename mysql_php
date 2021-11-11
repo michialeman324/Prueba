@@ -1,0 +1,29 @@
+<?php
+
+ header("Access-Control-Allow-Origin: *");// Esto es el permiso que necesito para conectar la base de datos
+
+ $con = mysqli_connect("localhost","root","","empleados"); //Siempre poner el nombre de la base de datos bien con su root y localhost
+ $responder = array();
+ if($con){
+   
+   $sql = "select * from usuarios";
+   $resultado = mysqli_query($con,$sql); 
+   if($resultado){
+   header("Content-type: JSON");
+
+   $i=0; //Esta es la forma de conectar la base de datos con el php
+      while($row = mysqli_fetch_assoc($resultado)){
+         $responder[$i]["id"] = $row ["id"]; //Todo debe ser igual a lo que esta escrito en el mysql
+         $responder[$i]["nombre"] = $row ["nombre"];
+         $responder[$i]["apellido"] = $row ["apellido"];
+         $responder[$i]["correo"] = $row ["correo"];
+         $responder[$i]["edad"] = $row ["edad"];
+         $i++;
+      }
+      echo json_encode($responder,JSON_PRETTY_PRINT); //Esto es para se ordene como un json
+   }
+
+ }else{
+    echo"La conexion a fallado";
+ }
+?>
